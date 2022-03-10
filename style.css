@@ -64,11 +64,12 @@ main {
 }
 
 #estatistica div {
-    height: 12px;
+    height: 20px;
     background-color: #585858;
     width: 2px;
     display: inline-block;
     transition: all 2s;
+    text-align: right;
 }
 
 main button {

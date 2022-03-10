@@ -35,6 +35,7 @@ let img = document.querySelector('#demonstracao img');
 function rolar() {
     for (let i = 0; i < frequenciaArray.length; i++) {
         divs[i].style.width = 2 + 'px';
+        divs[i].innerText = '';
     }
     img.setAttribute('src', 'images/dados.webp');
 
@@ -43,8 +44,9 @@ function rolar() {
 
         for (let i = 0; i < frequenciaArray.length; i++) {
             divs[i].style.width = frequenciaArray[i] * 3 + 'px';
+            divs[i].innerText = frequenciaArray[i]
         }
-    }, 4000)
+    }, 3000)
 }
 
 
